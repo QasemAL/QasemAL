@@ -64,8 +64,9 @@ export default function Portfolio() {
                   size="lg"
                   variant="outline"
                   className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-slate-900 bg-transparent"
+                  asChild
                 >
-                  Get In Touch
+                  <Link href="mailto:qasemalqudah12@gmail.com">Get In Touch</Link>
                 </Button>
               </div>
             </div>
@@ -128,17 +129,17 @@ export default function Portfolio() {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
-                    <h3 className="text-2xl font-semibold text-purple-400">Software Developer Intern</h3>
-                    <p className="text-slate-400 text-lg">Various Companies</p>
+                    <h3 className="text-2xl font-semibold text-purple-400">Game Developer</h3>
+                    <p className="text-slate-400 text-lg">Byte Shovel Games · Full-time</p>
+                    <p className="text-slate-500 text-sm">Cairo, Egypt · Remote</p>
                   </div>
                   <Badge variant="outline" className="border-purple-400 text-purple-400 w-fit">
-                    2023 - Present
+                    Jul 2025 - Present · 1 mo
                   </Badge>
                 </div>
                 <p className="text-slate-300 leading-relaxed">
-                  Gained hands-on experience in software development, working on real-world projects and collaborating
-                  with development teams. Applied programming skills to solve business problems and learned industry
-                  best practices.
+                  Working as a full-time game developer, creating engaging gaming experiences and implementing
+                  innovative gameplay mechanics. Contributing to the development pipeline from concept to release.
                 </p>
               </CardContent>
             </Card>
@@ -147,16 +148,37 @@ export default function Portfolio() {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
-                    <h3 className="text-2xl font-semibold text-purple-400">Independent Game Developer</h3>
-                    <p className="text-slate-400 text-lg">Self-Employed</p>
+                    <h3 className="text-2xl font-semibold text-purple-400">Artificial Intelligence Intern</h3>
+                    <p className="text-slate-400 text-lg">TJDEED Technology · Internship</p>
+                    <p className="text-slate-500 text-sm">Amman, Jordan · Remote</p>
                   </div>
                   <Badge variant="outline" className="border-purple-400 text-purple-400 w-fit">
-                    2022 - Present
+                    Jun 2025 - Present · 2 mos
                   </Badge>
                 </div>
                 <p className="text-slate-300 leading-relaxed">
-                  Developed and published multiple games across different genres on itch.io. Managed the complete game
-                  development lifecycle from concept to release, including design, programming, testing, and marketing.
+                  Developing AI-powered solutions and machine learning applications. Gaining hands-on experience with
+                  modern AI technologies and contributing to innovative projects in the tech industry.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-800/50 border-slate-700">
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-purple-400">Mobile Application Developer</h3>
+                    <p className="text-slate-400 text-lg">JoVision · Internship</p>
+                    <p className="text-slate-500 text-sm">Irbid, Jordan · On-site</p>
+                  </div>
+                  <Badge variant="outline" className="border-purple-400 text-purple-400 w-fit">
+                    Apr 2024 - Aug 2024 · 5 mos
+                  </Badge>
+                </div>
+                <p className="text-slate-300 leading-relaxed">
+                  Developed mobile applications using modern frameworks and technologies. Collaborated with
+                  cross-functional teams to deliver high-quality mobile solutions and gained valuable experience in the
+                  software development lifecycle.
                 </p>
               </CardContent>
             </Card>
@@ -437,9 +459,12 @@ export default function Portfolio() {
               size="lg"
               variant="outline"
               className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-slate-900 bg-transparent"
+              asChild
             >
-              <Mail className="w-5 h-5 mr-2" />
-              Email Me
+              <Link href="mailto:qasemalqudah12@gmail.com">
+                <Mail className="w-5 h-5 mr-2" />
+                Email Me
+              </Link>
             </Button>
             <Button
               size="lg"
@@ -456,9 +481,12 @@ export default function Portfolio() {
               size="lg"
               variant="outline"
               className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-slate-900 bg-transparent"
+              asChild
             >
-              <Github className="w-5 h-5 mr-2" />
-              GitHub
+              <Link href="https://github.com/QasemAL" target="_blank">
+                <Github className="w-5 h-5 mr-2" />
+                GitHub
+              </Link>
             </Button>
           </div>
         </div>
